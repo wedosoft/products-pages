@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { vendors } from '../../data/vendors';
+import { vendors } from '../../data/vendors.ts';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Header = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { vendors } from '../data/vendors';
-import { products } from '../data/products';
+import { vendors } from '../data/vendors.ts';
+import { products } from '../data/products.ts';
 import { ArrowRight, Star, Users, BarChart2 } from 'lucide-react';
 
 const HeroSection = () => {

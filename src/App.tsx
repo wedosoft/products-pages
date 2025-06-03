@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/layout/Layout';
-import HomePage from './pages/HomePage';
-import VendorPage from './pages/VendorPage';
-import ProductPage from './pages/ProductPage';
-import ComparePage from './pages/ComparePage';
-import ContactPage from './pages/ContactPage';
+import Layout from './components/layout/Layout.tsx';
+import HomePage from './pages/HomePage.tsx';
+import VendorPage from './pages/VendorPage.tsx';
+import ProductPage from './pages/ProductPage.tsx';
+import ComparePage from './pages/ComparePage.tsx';
+import ContactPage from './pages/ContactPage.tsx';
 
 // CSS 설정
 import './index.css';
