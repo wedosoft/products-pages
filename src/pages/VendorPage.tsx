@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { getVendorById } from '../data/vendors.ts';
-import { getProductsByVendorId } from '../data/products.ts';
+import { getVendorById } from '../data/vendors';
+import { getProductsByVendorId } from '../data/products';
 import { ArrowRight } from 'lucide-react';
 
 const VendorPage = () => {
