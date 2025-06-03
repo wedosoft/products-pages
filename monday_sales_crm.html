@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday Sales CRM - 영업 프로세스 관리 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 제품별 커스텀 스타일 */
+        :root {
+            --product-color: #FF3D57;
+            --product-color-light: #FF6B7E;
+            --product-color-dark: #E62945;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #ffebee 100%);
+        }
+        
+        .feature-card {
+            border-top: 3px solid var(--product-color);
+        }
+        
+        .feature-icon {
+            color: var(--product-color);
+        }
+        
+        .functions {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffebee 100%);
+        }
+        
+        .functions-table th {
+            background-color: var(--product-color);
+        }
+        
+        .function-image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .cta {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--product-color-dark);
+        }
+        
+        .btn-secondary {
+            color: var(--product-color);
+            border: 1px solid var(--product-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <img src="images/monday-sales-crm-logo.png" alt="Monday Sales CRM 로고" onerror="this.src='https://via.placeholder.com/180x40?text=Monday+Sales+CRM'">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#features" class="nav-link">주요 특징</a></li>
+                    <li class="nav-item"><a href="#functions" class="nav-link">상세 기능</a></li>
+                    <li class="nav-item"><a href="#integrations" class="nav-link">연동/확장성</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link btn btn-primary">데모 신청</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Monday Sales CRM</h1>
+                <p class="hero-subtitle">영업 프로세스를 시각화하고 자동화하여 매출 성장을 가속화하세요</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">데모 신청</a>
+                    <a href="#cta" class="btn btn-secondary btn-large">상담 문의</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/monday-sales-crm-hero.png" alt="Monday Sales CRM 대시보드" onerror="this.src='https://via.placeholder.com/600x400?text=Monday+Sales+CRM+대시보드'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">주요 특징</h2>
+            <p class="section-subtitle">Monday Sales CRM은 영업 프로세스를 시각화하고 자동화하여 팀의 성과를 극대화합니다.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">직관적인 파이프라인</h3>
+                    <p class="feature-description">영업 기회를 시각적으로 관리하고 진행 상황을 한눈에 파악할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">자동화 워크플로우</h3>
+                    <p class="feature-description">반복적인 작업을 자동화하여 영업팀이 핵심 활동에 집중할 수 있도록 지원합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">맞춤형 구성</h3>
+                    <p class="feature-description">비즈니스 요구사항에 맞게 필드, 보기, 워크플로우를 자유롭게 구성할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2 class="section-title">상세 기능</h2>
+            <p class="section-subtitle">Monday Sales CRM은 영업 프로세스 전반에 필요한 모든 기능을 제공합니다.</p>
+            
+            <table class="functions-table">
+                <thead>
+                    <tr>
+                        <th>기능명</th>
+                        <th>설명 및 이미지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="function-name">리드 관리</td>
+                        <td>
+                            <p class="function-description">잠재 고객 정보를 체계적으로 수집, 분류하고 우선순위를 지정하여 효율적으로 관리합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-leads.png" alt="리드 관리" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=리드+관리'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">영업 파이프라인</td>
+                        <td>
+                            <p class="function-description">영업 기회를 단계별로 시각화하여 진행 상황을 추적하고 예측 가능한 매출을 관리합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-pipeline.png" alt="영업 파이프라인" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=영업+파이프라인'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">고객 360° 뷰</td>
+                        <td>
+                            <p class="function-description">고객 정보, 상호작용 내역, 거래 이력 등을 통합하여 완전한 고객 프로필을 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-customer.png" alt="고객 360° 뷰" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=고객+360°+뷰'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">영업 분석</td>
+                        <td>
+                            <p class="function-description">실시간 대시보드와 맞춤형 보고서로 영업 성과를 분석하고 데이터 기반 의사결정을 지원합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-analytics.png" alt="영업 분석" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=영업+분석'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">이메일 통합</td>
+                        <td>
+                            <p class="function-description">이메일을 CRM에 직접 연동하여 모든 고객 커뮤니케이션을 한 곳에서 관리할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-email.png" alt="이메일 통합" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=이메일+통합'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">모바일 앱</td>
+                        <td>
+                            <p class="function-description">iOS 및 Android 모바일 앱으로 언제 어디서나 영업 활동을 관리하고 고객 정보에 접근할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-sales-crm-mobile.png" alt="모바일 앱" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=모바일+앱'">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 연동 섹션 -->
+    <section class="integrations" id="integrations">
+        <div class="container">
+            <h2 class="section-title">연동/확장성</h2>
+            <p class="section-subtitle">Monday Sales CRM은 다양한 비즈니스 도구와 원활하게 연동됩니다.</p>
+            
+            <div class="integration-logos">
+                <img src="images/integration-gmail.png" alt="Gmail" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Gmail'">
+                <img src="images/integration-outlook.png" alt="Outlook" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Outlook'">
+                <img src="images/integration-slack.png" alt="Slack" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Slack'">
+                <img src="images/integration-zoom.png" alt="Zoom" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zoom'">
+                <img src="images/integration-zapier.png" alt="Zapier" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zapier'">
+                <img src="images/integration-hubspot.png" alt="HubSpot" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=HubSpot'">
+            </div>
+            
+            <p class="integration-description">
+                Monday Sales CRM은 200개 이상의 앱과 연동되어 기존 업무 환경과 원활하게 통합됩니다. 
+                Gmail, Outlook, Slack, Zoom 등 주요 비즈니스 도구와의 연동으로 작업 전환 없이 효율적으로 
+                업무를 처리할 수 있으며, Zapier를 통해 추가적인 자동화 시나리오를 구성할 수 있습니다. 
+                또한 Monday Work OS 제품군과의 완벽한 통합으로 영업, 마케팅, 고객 지원 등 전체 비즈니스 
+                프로세스를 하나의 플랫폼에서 관리할 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Monday Sales CRM은 어떤 규모의 기업에 적합한가요?</div>
+                    <div class="faq-answer">
+                        <p>Monday Sales CRM은 스타트업부터 엔터프라이즈까지 모든 규모의 기업에 맞게 설계되었습니다. 확장 가능한 구조로 팀 규모와 비즈니스 성장에 따라 유연하게 조정할 수 있으며, 다양한 가격 플랜을 통해 기업 규모와 요구사항에 맞는 옵션을 선택할 수 있습니다. 특히 빠르게 성장하는 기업에는 확장성과 유연성 측면에서 큰 이점을 제공합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">기존 CRM 시스템에서 Monday Sales CRM으로 마이그레이션이 가능한가요?</div>
+                    <div class="faq-answer">
+                        <p>네, Monday Sales CRM은 Salesforce, HubSpot, Pipedrive 등 다양한 CRM 시스템에서 데이터를 쉽게 마이그레이션할 수 있는 도구와 가이드를 제공합니다. CSV 파일 가져오기 기능을 통해 고객 데이터, 거래 정보, 활동 내역 등을 손쉽게 이전할 수 있으며, 필요에 따라 전문 마이그레이션 서비스도 이용할 수 있습니다. 또한 마이그레이션 전문가가 데이터 손실 없이 원활한 전환을 지원합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Monday Sales CRM을 사용하기 위해 기술적 지식이 필요한가요?</div>
+                    <div class="faq-answer">
+                        <p>아니요, Monday Sales CRM은 코딩이나 기술적 지식 없이도 쉽게 사용할 수 있도록 설계되었습니다. 직관적인 드래그 앤 드롭 인터페이스를 통해 영업 파이프라인을 구성하고, 필드를 추가하고, 자동화 규칙을 설정할 수 있습니다. 또한 다양한 템플릿을 제공하여 빠르게 시작할 수 있으며, 필요에 따라 고급 기능도 쉽게 활용할 수 있습니다. 사용자 친화적인 디자인으로 영업팀이 빠르게 적응하고 생산성을 높일 수 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Monday Sales CRM의 보안은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Monday Sales CRM은 엔터프라이즈급 보안 표준을 준수합니다. ISO 27001, SOC 2 Type II, GDPR, CCPA 등 글로벌 보안 인증을 획득했으며, 모든 데이터는 전송 중 및 저장 시 암호화됩니다. 또한 역할 기반 액세스 제어, 싱글 사인온(SSO), 다중 인증(MFA), IP 제한 등 고급 보안 기능을 제공하여 고객 데이터를 안전하게 보호합니다. 정기적인 보안 감사와 취약점 테스트를 통해 시스템의 안전성을 지속적으로 검증하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta-title">영업 프로세스를 혁신하세요</h2>
+            <p class="cta-subtitle">Monday Sales CRM과 함께 영업 성과를 극대화하고 비즈니스 성장을 가속화하세요.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary btn-large">데모 신청</a>
+                <a href="#" class="btn btn-primary btn-large">상담 문의</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">Monday Sales CRM</div>
+                    <p class="footer-description">영업 프로세스를 시각화하고 자동화하여 매출 성장을 가속화하세요</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">제품</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">주요 특징</a></li>
+                        <li class="footer-link"><a href="#">상세 기능</a></li>
+                        <li class="footer-link"><a href="#">가격 정책</a></li>
+                        <li class="footer-link"><a href="#">보안</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">리소스</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">블로그</a></li>
+                        <li class="footer-link"><a href="#">웨비나</a></li>
+                        <li class="footer-link"><a href="#">고객 사례</a></li>
+                        <li class="footer-link"><a href="#">도움말 센터</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">회사</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">회사 소개</a></li>
+                        <li class="footer-link"><a href="#">파트너</a></li>
+                        <li class="footer-link"><a href="#">채용 정보</a></li>
+                        <li class="footer-link"><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monday.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // FAQ 아코디언
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

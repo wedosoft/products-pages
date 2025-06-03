@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { getVendorById } from '../data/vendors';
 import { getProductsByVendorId } from '../data/products';
 import { ArrowRight } from 'lucide-react';
@@ -8,7 +8,7 @@ const VendorPage = () => {
   const { vendorId } = useParams<{ vendorId: string }>();
   const vendor = getVendorById(vendorId || '');
   const products = getProductsByVendorId(vendorId || '');
-  
+
   if (!vendor) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
@@ -18,9 +18,9 @@ const VendorPage = () => {
       </div>
     );
   }
-  
+
   return (
-    <div>
+    <div className="container mx-auto px-4 py-16">
       {/* 벤더 히어로 섹션 */}
       <section 
         className="py-16 md:py-24" 
@@ -64,6 +64,27 @@ const VendorPage = () => {
                 </div>
                 <h2 className="text-2xl font-bold mb-2">{vendor.name}</h2>
                 <p className="text-gray-600 mb-4">제품 {products.length}개</p>
+                {/* 벤더의 제품 빠른 링크 섹션 */}
+                {vendor.products && vendor.products.length > 0 && (
+                  <div className="mt-6 border-t pt-6">
+                    <h3 className="text-sm font-semibold text-gray-600 mb-3">빠른 링크</h3>
+                    <div className="space-y-2">
+                      {vendor.products.map((productId) => {
+                        const product = products.find(p => p.id === productId);
+                        return product ? (
+                          <Link
+                            key={productId}
+                            to={`/${vendor.id}/${productId}`}
+                            className="block text-sm hover:underline"
+                            style={{ color: vendor.themeColor }}
+                          >
+                            {product.name}
+                          </Link>
+                        ) : null;
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

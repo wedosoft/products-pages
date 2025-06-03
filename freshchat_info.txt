@@ -1,0 +1,53 @@
+# Freshchat 제품 정보
+
+## 슬로건/한 줄 요약
+- Customer wow starts with a chat
+- 고객 감동은 채팅에서 시작됩니다
+
+## 주요 특징
+1. **채널 자유도(Channel Freedom)**: 고객이 선택한 모든 채널에서 원활한 경험 제공 - 메시징, 라이브 채팅, 이메일, 음성 등 다양한 채널 지원
+2. **AI 기반 봇 지원**: 웹사이트, 네이티브 앱, 메시징 채널 전반에 걸쳐 AI 기반 봇 경험을 쉽게 생성 및 배포
+3. **통합 에이전트 워크스페이스**: 에이전트에게 개인화된 서비스를 제공하는 데 필요한 컨텍스트 제공
+
+## 상세 기능
+1. **옴니채널 메시징**: 고객이 선호하는 모든 채널에서 원활한 경험 제공
+2. **AI 기반 챗봇**: 고객이 선택한 채널에서 셀프 서비스를 위한 AI 기반 봇 제공
+3. **통합 에이전트 워크스페이스**: 과거 구매 내역, 미해결 문제, 모든 채널의 대화 등 고객 정보를 한눈에 확인 가능
+4. **선제적 고객 여정**: 잠재적 문제를 예방하기 위해 웹이나 메시징 채널에서 고객과 선제적으로 소통
+5. **관리자 및 분석 도구**: 고객 행동 및 팀 성과에 대한 인사이트 제공, 팀 생산성 및 봇 효율성 파악
+6. **수익 창출 기회**: 고객과의 모든 접점을 잠재적 수익 창출 기회로 전환
+
+## 연동/확장성
+- Freshdesk Omni로 업그레이드하여 고급 티켓팅, 지식 베이스 등 추가 기능 활용 가능
+- 다양한 채널 통합: 웹사이트, 네이티브 앱, 메시징 채널(WhatsApp, SMS 등)
+- API를 통한 맞춤형 통합 가능
+
+## 경쟁 우위
+- 모든 채널에서 일관된 고객 경험 제공
+- 쉽고 빠른 AI 봇 구현으로 셀프 서비스 확장
+- 에이전트에게 필요한 모든 고객 정보를 한 곳에서 제공하여 개인화된 서비스 가능
+- 선제적 고객 소통으로 문제 예방 및 수익 창출 기회 확대
+
+## 타겟 고객
+- 기업의 전산 담당자
+- 고객 서비스 및 지원 팀 관리자
+- 다양한 채널을 통합 관리하려는 기업
+
+## 고객 사례
+- Klarna (Eric Bompas, Product Manager)
+- "I'm responsible for our chat platform and channel service strategy. The reason why we moved to Freshworks was for the APIs so that we can be our own chat client. I really enjoyed the collaboration."
+
+- Iba Cosmetics (Mauli Teli, Co-founder)
+- "Along with efficient team management, Freshchat helped us develop a stronger relationship with our customers and make the transition from an offline retail store to an online D2C brand much easier."
+
+## CTA
+- Try Freshchat
+- Demo Freshdesk Omni
+- Try it Free
+
+## 이미지 참조
+- 다양한 채널 통합 인터페이스
+- AI 챗봇 대화 화면
+- 통합 에이전트 워크스페이스
+- 고객 여정 관리 화면
+- 분석 대시보드

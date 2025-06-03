@@ -10,6 +10,7 @@ export interface Product {
   integrations: string[];
   faq: FAQ[];
   themeColor: string;
+  price: number; // Added price property
 }
 
 export interface Feature {
@@ -27,6 +28,7 @@ export interface Function {
 export interface FAQ {
   question: string;
   answer: string;
+  description?: string; // Added optional description property
 }
 
 export const products: Product[] = [
@@ -108,7 +110,8 @@ export const products: Product[] = [
         answer: '네, Freshdesk Omni는 전담 온보딩 매니저, 교육 세션, 광범위한 문서 및 비디오 튜토리얼을 통해 원활한 도입을 지원합니다. 또한 24/7 고객 지원을 통해 문제 해결을 돕습니다.'
       }
     ],
-    themeColor: '#3284D6'
+    themeColor: '#3284D6',
+    price: 49900
   },
   // 다른 제품들도 유사한 구조로 추가...
   {
@@ -177,7 +180,7 @@ export const products: Product[] = [
       },
       {
         question: '자산 관리 기능은 어떻게 작동하나요?',
-        description: 'Freshservice의 자산 관리 기능은 자동 검색 도구를 통해 네트워크에 연결된 모든 하드웨어 및 소프트웨어 자산을 식별하고 추적합니다. 자산의 전체 수명주기, 계약, 라이선스, 비용 등을 관리하고 자산 관계 매핑을 통해 영향 분석을 수행할 수 있습니다.'
+        answer: 'Freshservice의 자산 관리 기능은 자동 검색 도구를 통해 네트워크에 연결된 모든 하드웨어 및 소프트웨어 자산을 식별하고 추적합니다. 자산의 전체 수명주기, 계약, 라이선스, 비용 등을 관리하고 자산 관계 매핑을 통해 영향 분석을 수행할 수 있습니다.'
       },
       {
         question: '클라우드 인프라와 통합이 가능한가요?',
@@ -188,7 +191,8 @@ export const products: Product[] = [
         answer: '네, Freshservice는 iOS 및 Android 기기용 모바일 앱을 제공합니다. IT 팀은 이동 중에도 티켓을 관리하고, 승인을 처리하고, 자산을 스캔할 수 있습니다. 또한 직원들도 모바일 앱을 통해 티켓을 제출하고 상태를 확인할 수 있습니다.'
       }
     ],
-    themeColor: '#3284D6'
+    themeColor: '#3284D6',
+    price: 39900
   },
   // 추가 제품들...
   {
@@ -268,7 +272,8 @@ export const products: Product[] = [
         answer: '네, Google 문서, 스프레드시트, 슬라이드는 오프라인 모드를 지원하여 인터넷 연결 없이도 작업할 수 있습니다. 인터넷에 다시 연결되면 변경 사항이 자동으로 동기화됩니다.'
       }
     ],
-    themeColor: '#4285F4'
+    themeColor: '#4285F4',
+    price: 0
   },
   {
     id: 'remote',
@@ -347,7 +352,8 @@ export const products: Product[] = [
         answer: '네, Splashtop은 낮은 대역폭 환경에서도 효율적으로 작동하도록 최적화되어 있습니다. 자동 품질 조정 기술을 통해 네트워크 상태에 따라 스트리밍 품질을 동적으로 조정하여 연결이 불안정한 환경에서도 원활한 원격 접속 경험을 제공합니다. 최소 1.5Mbps의 인터넷 속도에서도 작동 가능하며, 네트워크 지연 시간이 높은 환경에서도 사용자 경험을 최적화하는 기술을 적용하고 있습니다.'
       }
     ],
-    themeColor: '#FF6600'
+    themeColor: '#FF6600',
+    price: 0
   }
 ];
 

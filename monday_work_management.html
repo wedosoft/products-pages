@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday Work Management - 업무 관리 및 협업 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 제품별 커스텀 스타일 */
+        :root {
+            --product-color: #0073EA;
+            --product-color-light: #3B95EE;
+            --product-color-dark: #0060C7;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #e0f0ff 100%);
+        }
+        
+        .feature-card {
+            border-top: 3px solid var(--product-color);
+        }
+        
+        .feature-icon {
+            color: var(--product-color);
+        }
+        
+        .functions {
+            background: linear-gradient(135deg, #f9f9f9 0%, #e0f0ff 100%);
+        }
+        
+        .functions-table th {
+            background-color: var(--product-color);
+        }
+        
+        .function-image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .cta {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--product-color-dark);
+        }
+        
+        .btn-secondary {
+            color: var(--product-color);
+            border: 1px solid var(--product-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <img src="images/monday-work-management-logo.png" alt="Monday Work Management 로고" onerror="this.src='https://via.placeholder.com/180x40?text=Monday+Work+Management'">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#features" class="nav-link">주요 특징</a></li>
+                    <li class="nav-item"><a href="#functions" class="nav-link">상세 기능</a></li>
+                    <li class="nav-item"><a href="#integrations" class="nav-link">연동/확장성</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link btn btn-primary">데모 신청</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Monday Work Management</h1>
+                <p class="hero-subtitle">팀의 업무를 시각화하고 자동화하여 생산성과 협업을 극대화하세요</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">데모 신청</a>
+                    <a href="#cta" class="btn btn-secondary btn-large">상담 문의</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/monday-work-management-hero.png" alt="Monday Work Management 대시보드" onerror="this.src='https://via.placeholder.com/600x400?text=Monday+Work+Management+대시보드'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">주요 특징</h2>
+            <p class="section-subtitle">Monday Work Management는 팀의 업무를 시각화하고 자동화하여 생산성과 협업을 극대화하는 올인원 업무 관리 플랫폼입니다.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">유연한 워크플로우</h3>
+                    <p class="feature-description">다양한 업무 방식과 프로젝트 유형에 맞게 워크플로우를 자유롭게 구성하고 관리할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">팀 협업</h3>
+                    <p class="feature-description">실시간 커뮤니케이션, 파일 공유, 피드백 등을 통해 팀원 간 원활한 협업을 지원합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">자동화</h3>
+                    <p class="feature-description">반복적인 작업을 자동화하여 시간을 절약하고 인적 오류를 줄여 업무 효율성을 높입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2 class="section-title">상세 기능</h2>
+            <p class="section-subtitle">Monday Work Management는 업무 관리에 필요한 모든 기능을 제공합니다.</p>
+            
+            <table class="functions-table">
+                <thead>
+                    <tr>
+                        <th>기능명</th>
+                        <th>설명 및 이미지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="function-name">보드 및 뷰</td>
+                        <td>
+                            <p class="function-description">칸반, 간트 차트, 캘린더, 타임라인 등 다양한 뷰를 통해 업무를 시각화하고 관리할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-boards.png" alt="보드 및 뷰" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=보드+및+뷰'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">대시보드</td>
+                        <td>
+                            <p class="function-description">프로젝트 진행 상황, 팀 성과, 리소스 활용 등을 한눈에 파악할 수 있는 맞춤형 대시보드를 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-dashboard.png" alt="대시보드" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=대시보드'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">자동화 레시피</td>
+                        <td>
+                            <p class="function-description">코딩 없이 드래그 앤 드롭으로 업무 자동화 규칙을 설정하여 반복 작업을 줄이고 효율성을 높일 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-automation.png" alt="자동화 레시피" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=자동화+레시피'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">파일 관리</td>
+                        <td>
+                            <p class="function-description">문서, 이미지, 동영상 등 모든 파일을 업무 항목과 연결하여 체계적으로 관리하고 공유할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-files.png" alt="파일 관리" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=파일+관리'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">커뮤니케이션</td>
+                        <td>
+                            <p class="function-description">업무 항목에 직접 댓글을 달고, @멘션으로 팀원을 태그하고, 실시간 알림을 받아 원활한 소통을 유지할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-communication.png" alt="커뮤니케이션" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=커뮤니케이션'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">양식 및 설문</td>
+                        <td>
+                            <p class="function-description">맞춤형 양식을 만들어 데이터를 수집하고, 수집된 정보를 자동으로 보드에 추가하여 관리할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/monday-work-management-forms.png" alt="양식 및 설문" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=양식+및+설문'">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 연동 섹션 -->
+    <section class="integrations" id="integrations">
+        <div class="container">
+            <h2 class="section-title">연동/확장성</h2>
+            <p class="section-subtitle">Monday Work Management는 다양한 비즈니스 도구와 원활하게 연동됩니다.</p>
+            
+            <div class="integration-logos">
+                <img src="images/integration-slack.png" alt="Slack" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Slack'">
+                <img src="images/integration-teams.png" alt="Microsoft Teams" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Teams'">
+                <img src="images/integration-google.png" alt="Google Workspace" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Google'">
+                <img src="images/integration-zoom.png" alt="Zoom" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zoom'">
+                <img src="images/integration-dropbox.png" alt="Dropbox" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Dropbox'">
+                <img src="images/integration-zapier.png" alt="Zapier" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zapier'">
+            </div>
+            
+            <p class="integration-description">
+                Monday Work Management는 200개 이상의 앱과 연동되어 기존 업무 환경과 원활하게 통합됩니다. 
+                Slack, Microsoft Teams 등 협업 도구와의 연동으로 알림을 받고 작업 상태를 공유할 수 있으며, 
+                Google Workspace, Microsoft Office 365 등 생산성 도구와의 통합으로 문서 작업을 간소화할 수 있습니다. 
+                또한 Zoom, Dropbox, Adobe Creative Cloud 등 다양한 도구와의 연동을 통해 업무 흐름을 최적화하고, 
+                Zapier를 통해 추가적인 자동화 시나리오를 구성할 수 있습니다. Monday Work OS 제품군(Sales CRM, Dev, Service 등)과의 
+                완벽한 통합으로 영업, 개발, 고객 지원 등 전체 비즈니스 프로세스를 하나의 플랫폼에서 관리할 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Monday Work Management는 어떤 팀에 적합한가요?</div>
+                    <div class="faq-answer">
+                        <p>Monday Work Management는 마케팅, 프로젝트 관리, 운영, HR, IT, 제품, 디자인 등 모든 부서와 팀에 적합합니다. 유연한 구성과 다양한 템플릿을 통해 각 팀의 고유한 워크플로우와 프로세스에 맞게 조정할 수 있습니다. 소규모 스타트업부터 대기업까지 모든 규모의 조직에서 활용할 수 있으며, 특히 여러 부서 간 협업이 필요한 크로스 펑셔널 팀에게 큰 이점을 제공합니다. 또한 원격 근무 및 하이브리드 근무 환경에서도 팀의 생산성과 협업을 효과적으로 지원합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">기존 도구에서 Monday Work Management로 마이그레이션이 가능한가요?</div>
+                    <div class="faq-answer">
+                        <p>네, Monday Work Management는 Asana, Trello, Jira, Excel, Airtable 등 다양한 도구에서 데이터를 쉽게 마이그레이션할 수 있는 도구와 가이드를 제공합니다. CSV 파일 가져오기 기능을 통해 작업 항목, 프로젝트, 팀원 정보 등을 손쉽게 이전할 수 있으며, 전용 마이그레이션 도구를 통해 특정 플랫폼에서의 전환을 지원합니다. 또한 마이그레이션 전문가가 데이터 손실 없이 원활한 전환을 지원하며, 필요에 따라 단계적 마이그레이션도 가능합니다. 마이그레이션 후에는 기존 워크플로우를 최적화하고 자동화하여 업무 효율성을 더욱 높일 수 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Monday Work Management를 사용하기 위해 기술적 지식이 필요한가요?</div>
+                    <div class="faq-answer">
+                        <p>아니요, Monday Work Management는 코딩이나 기술적 지식 없이도 쉽게 사용할 수 있도록 설계되었습니다. 직관적인 드래그 앤 드롭 인터페이스를 통해 보드를 구성하고, 항목을 추가하고, 자동화 규칙을 설정할 수 있습니다. 또한 다양한 업종과 부서에 맞는 사전 구성된 템플릿을 제공하여 빠르게 시작할 수 있으며, 필요에 따라 고급 기능도 쉽게 활용할 수 있습니다. 사용자 친화적인 디자인으로 팀원들이 빠르게 적응하고 생산성을 높일 수 있으며, 필요한 경우 온보딩 지원과 교육 자료도 제공합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Monday Work Management의 보안은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Monday Work Management는 엔터프라이즈급 보안 표준을 준수합니다. ISO 27001, SOC 2 Type II, GDPR, CCPA 등 글로벌 보안 인증을 획득했으며, 모든 데이터는 전송 중 및 저장 시 암호화됩니다. 또한 역할 기반 액세스 제어, 싱글 사인온(SSO), 다중 인증(MFA), IP 제한 등 고급 보안 기능을 제공하여 민감한 비즈니스 데이터를 안전하게 보호합니다. 정기적인 보안 감사와 취약점 테스트를 통해 시스템의 안전성을 지속적으로 검증하고 있으며, 보안 이벤트 모니터링 및 알림 시스템을 통해 잠재적 위협에 신속하게 대응합니다. 또한 99.9% 업타임 SLA를 보장하여 비즈니스 연속성을 지원합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta-title">업무 관리를 혁신하세요</h2>
+            <p class="cta-subtitle">Monday Work Management와 함께 팀의 생산성과 협업을 극대화하세요.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary btn-large">데모 신청</a>
+                <a href="#" class="btn btn-primary btn-large">상담 문의</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">Monday Work Management</div>
+                    <p class="footer-description">팀의 업무를 시각화하고 자동화하여 생산성과 협업을 극대화하세요</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">제품</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">주요 특징</a></li>
+                        <li class="footer-link"><a href="#">상세 기능</a></li>
+                        <li class="footer-link"><a href="#">가격 정책</a></li>
+                        <li class="footer-link"><a href="#">보안</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">리소스</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">블로그</a></li>
+                        <li class="footer-link"><a href="#">웨비나</a></li>
+                        <li class="footer-link"><a href="#">고객 사례</a></li>
+                        <li class="footer-link"><a href="#">도움말 센터</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">회사</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">회사 소개</a></li>
+                        <li class="footer-link"><a href="#">파트너</a></li>
+                        <li class="footer-link"><a href="#">채용 정보</a></li>
+                        <li class="footer-link"><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monday.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // FAQ 아코디언
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -53,7 +53,7 @@ const Header = () => {
                   </div>
                   <div className="space-y-2">
                     {vendor.products.map((productId) => {
-                      const product = vendor.productDetails.find(p => p.id === productId);
+                      const product = vendor.productDetails && vendor.productDetails.find(p => p.id === productId);
                       return product ? (
                         <Link
                           key={productId}
@@ -102,7 +102,7 @@ const Header = () => {
                   </Link>
                   <div className="pl-4 space-y-2">
                     {vendor.products.map((productId) => {
-                      const product = vendor.productDetails.find(p => p.id === productId);
+                      const product = vendor.productDetails && vendor.productDetails.find(p => p.id === productId);
                       return product ? (
                         <Link
                           key={productId}

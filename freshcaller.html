@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshcaller - 클라우드 기반 콜센터 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 제품별 커스텀 스타일 */
+        :root {
+            --product-color: #FFC107;
+            --product-color-light: #FFD54F;
+            --product-color-dark: #FFA000;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #fff8e1 100%);
+        }
+        
+        .feature-card {
+            border-top: 3px solid var(--product-color);
+        }
+        
+        .feature-icon {
+            color: var(--product-color);
+        }
+        
+        .functions {
+            background: linear-gradient(135deg, #f9f9f9 0%, #fff8e1 100%);
+        }
+        
+        .functions-table th {
+            background-color: var(--product-color);
+        }
+        
+        .function-image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .cta {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--product-color-dark);
+        }
+        
+        .btn-secondary {
+            color: var(--product-color);
+            border: 1px solid var(--product-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <img src="images/freshcaller-logo.png" alt="Freshcaller 로고" onerror="this.src='https://www.freshworks.com/static-assets/images/common/company/logos/logo-freshworks-color-h.svg'; this.style.height='30px';">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#features" class="nav-link">주요 특징</a></li>
+                    <li class="nav-item"><a href="#functions" class="nav-link">상세 기능</a></li>
+                    <li class="nav-item"><a href="#integrations" class="nav-link">연동/확장성</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link btn btn-primary">데모 신청</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Freshcaller</h1>
+                <p class="hero-subtitle">클라우드 기반 콜센터 솔루션으로 고객 커뮤니케이션을 혁신하세요</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">데모 신청</a>
+                    <a href="#cta" class="btn btn-secondary btn-large">상담 문의</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/freshcaller-hero.png" alt="Freshcaller 대시보드" onerror="this.src='https://via.placeholder.com/600x400?text=Freshcaller+대시보드'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">주요 특징</h2>
+            <p class="section-subtitle">Freshcaller는 기업의 전화 커뮤니케이션을 현대화하는 클라우드 기반 콜센터 솔루션입니다.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">클라우드 기반</h3>
+                    <p class="feature-description">하드웨어 설치 없이 몇 분 만에 구축하고 언제 어디서나 접근할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">글로벌 커버리지</h3>
+                    <p class="feature-description">90개 이상 국가의 전화번호를 제공하여 전 세계 고객과 연결할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">AI 기반 자동화</h3>
+                    <p class="feature-description">Freddy AI로 통화 라우팅, 자동 응대, 통화 분석 등을 지능적으로 자동화합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2 class="section-title">상세 기능</h2>
+            <p class="section-subtitle">Freshcaller는 고객 통화 관리에 필요한 모든 기능을 제공합니다.</p>
+            
+            <table class="functions-table">
+                <thead>
+                    <tr>
+                        <th>기능명</th>
+                        <th>설명 및 이미지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="function-name">IVR 시스템</td>
+                        <td>
+                            <p class="function-description">직관적인 드래그 앤 드롭 인터페이스로 복잡한 IVR 메뉴를 쉽게 구성할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-ivr.png" alt="IVR 시스템" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=IVR+시스템'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">통화 라우팅</td>
+                        <td>
+                            <p class="function-description">스킬 기반, 시간 기반, 지역 기반 등 다양한 조건으로 통화를 적절한 상담원에게 자동 배정합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-routing.png" alt="통화 라우팅" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=통화+라우팅'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">통화 모니터링</td>
+                        <td>
+                            <p class="function-description">실시간 통화 모니터링, 귓속말, 통화 참여 등으로 상담원을 효과적으로 코칭할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-monitoring.png" alt="통화 모니터링" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=통화+모니터링'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">통화 녹음</td>
+                        <td>
+                            <p class="function-description">모든 통화를 자동으로 녹음하고 안전하게 저장하여 품질 관리 및 교육에 활용할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-recording.png" alt="통화 녹음" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=통화+녹음'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">통화 분석</td>
+                        <td>
+                            <p class="function-description">통화량, 응답 시간, 해결률 등 다양한 지표를 분석하여 콜센터 성과를 최적화합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-analytics.png" alt="통화 분석" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=통화+분석'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">모바일 앱</td>
+                        <td>
+                            <p class="function-description">iOS 및 Android 모바일 앱으로 언제 어디서나 통화를 관리하고 응대할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/freshcaller-mobile.png" alt="모바일 앱" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=모바일+앱'">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 연동 섹션 -->
+    <section class="integrations" id="integrations">
+        <div class="container">
+            <h2 class="section-title">연동/확장성</h2>
+            <p class="section-subtitle">Freshcaller는 다양한 비즈니스 도구와 원활하게 연동됩니다.</p>
+            
+            <div class="integration-logos">
+                <img src="images/integration-freshdesk.png" alt="Freshdesk" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Freshdesk'">
+                <img src="images/integration-freshsales.png" alt="Freshsales" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Freshsales'">
+                <img src="images/integration-slack.png" alt="Slack" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Slack'">
+                <img src="images/integration-zapier.png" alt="Zapier" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zapier'">
+                <img src="images/integration-salesforce.png" alt="Salesforce" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Salesforce'">
+                <img src="images/integration-zendesk.png" alt="Zendesk" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zendesk'">
+            </div>
+            
+            <p class="integration-description">
+                Freshcaller는 Freshworks 제품군과 원활하게 통합되어 고객 지원, 영업, 마케팅을 하나로 연결합니다. 
+                또한 REST API를 통해 기존 CRM, 헬프데스크, 협업 도구 등과 쉽게 연동할 수 있어 비즈니스 워크플로우를 
+                중단 없이 유지할 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Freshcaller 설치에 특별한 하드웨어가 필요한가요?</div>
+                    <div class="faq-answer">
+                        <p>아니요, Freshcaller는 100% 클라우드 기반 솔루션으로 특별한 하드웨어 설치가 필요하지 않습니다. 인터넷 연결과 웹 브라우저만 있으면 몇 분 만에 설정하고 사용할 수 있습니다. 상담원은 컴퓨터나 모바일 기기에서 헤드셋만 있으면 바로 통화를 시작할 수 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">기존 전화번호를 Freshcaller로 이전할 수 있나요?</div>
+                    <div class="faq-answer">
+                        <p>네, Freshcaller는 기존 전화번호 이전(포팅)을 지원합니다. 대부분의 국가에서 현재 사용 중인 전화번호를 Freshcaller로 이전할 수 있으며, 이전 과정 동안 서비스 중단 없이 원활하게 전환할 수 있도록 전문 팀이 지원합니다. 또한 필요에 따라 새로운 지역 번호, 수신자 부담 번호, 또는 국제 번호를 즉시 구매하여 사용할 수도 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">통화 품질은 어떻게 보장되나요?</div>
+                    <div class="faq-answer">
+                        <p>Freshcaller는 전 세계 주요 통신사와 직접 연결된 글로벌 인프라를 통해 고품질 통화를 보장합니다. 지능형 라우팅 기술로 항상 최적의 경로를 통해 통화를 연결하며, 네트워크 상태를 실시간으로 모니터링하여 문제 발생 시 즉시 대체 경로로 전환합니다. 또한 통화 품질 모니터링 도구를 제공하여 관리자가 통화 품질 지표를 추적하고 필요시 조치를 취할 수 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Freshcaller의 보안 기능은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Freshcaller는 SOC 2, ISO 27001, GDPR 등 글로벌 보안 표준을 준수합니다. 모든 통화 데이터와 녹음은 전송 중 및 저장 시 암호화되며, 역할 기반 액세스 제어, 싱글 사인온(SSO), 다중 인증(MFA), IP 제한 등 엔터프라이즈급 보안 기능을 제공합니다. 또한 정기적인 보안 감사와 취약점 테스트를 통해 시스템의 안전성을 지속적으로 검증합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta-title">고객 통화 경험을 혁신하세요</h2>
+            <p class="cta-subtitle">Freshcaller와 함께 클라우드 기반 콜센터로 비즈니스 성장을 가속화하세요.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary btn-large">데모 신청</a>
+                <a href="#" class="btn btn-primary btn-large">상담 문의</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">Freshcaller</div>
+                    <p class="footer-description">클라우드 기반 콜센터 솔루션으로 고객 커뮤니케이션을 혁신하세요</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">제품</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">주요 특징</a></li>
+                        <li class="footer-link"><a href="#">상세 기능</a></li>
+                        <li class="footer-link"><a href="#">가격 정책</a></li>
+                        <li class="footer-link"><a href="#">보안</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">리소스</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">블로그</a></li>
+                        <li class="footer-link"><a href="#">웨비나</a></li>
+                        <li class="footer-link"><a href="#">고객 사례</a></li>
+                        <li class="footer-link"><a href="#">도움말 센터</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">회사</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">회사 소개</a></li>
+                        <li class="footer-link"><a href="#">파트너</a></li>
+                        <li class="footer-link"><a href="#">채용 정보</a></li>
+                        <li class="footer-link"><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Freshcaller. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // FAQ 아코디언
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

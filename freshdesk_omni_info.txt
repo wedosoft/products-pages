@@ -1,0 +1,49 @@
+# Freshdesk Omni 제품 정보
+
+## 슬로건/한 줄 요약
+- AI-powered, omnichannel customer service software
+- THE ALL-IN-ONE CUSTOMER SUPPORT SOLUTION
+
+## 주요 특징
+1. **AI-powered Support**: Freddy AI를 통한 24/7 지원, 25개 이상 언어 지원, 코딩 없이 AI 에이전트 배포 가능
+2. **Omnichannel Solution**: 이메일, 문자, 소셜 미디어, WhatsApp, Facebook, Instagram 등 다양한 채널 통합 지원
+3. **Unified Agent Workspace**: 모든 고객 상호작용을 단일 뷰로 통합하여 효율성 극대화
+
+## 상세 기능
+1. **Advanced Ticketing**: AI와 자동화를 통한 빠른 고객 문제 해결
+2. **Self-service**: AI 에이전트를 통한 24/7 개인화된 지원
+3. **Collaboration**: 소통, 정보, 자동화를 한 곳에서 쉽게 협업
+4. **Intelligent Insights and Analytics**: AI 기반 인사이트로 선제적 이슈 대응
+5. **Streamlined Admin**: AI, 워크플로우 자동화, 쉬운 커스터마이징으로 관리자 부담 경감
+6. **Freddy AI Copilot**: AI 기반 어시스턴트로 에이전트 업무 효율화
+
+## 연동/확장성
+- 네이티브 통합 기능 제공
+- 주요 연동 서비스: Slack, Shopify, WhatsApp, Facebook Messenger, Instagram, Salesforce, HubSpot, Jira 등
+- 추가 비용 없이 기본 제공되는 통합 기능
+
+## 경쟁 우위
+- 직관적인 인터페이스로 IT 도움 없이 빠른 배포 가능
+- 다양한 채널 지원으로 고객 접점 확대
+- AI 기반 자동화로 효율성 증대
+- 통합된 워크스페이스로 업무 효율성 향상
+
+## 타겟 고객
+- 기업의 전산 담당자
+- 고객 서비스 팀 관리자
+- 다양한 채널을 통합 관리하려는 기업
+
+## 고객 사례
+- Blue Nile (Pradeep Singh, VP of Enterprise Technology)
+- "You can have great agents that care about the customer, but if they don't have the tools to successfully service that customer, it's hard to deliver that high level of personalization."
+
+## CTA
+- Try it free
+- Get a demo
+
+## 이미지 참조
+- 다양한 채널 통합 대시보드 이미지
+- AI 에이전트 대화 화면
+- 통합 워크스페이스 인터페이스
+- 분석 대시보드
+- 연동 서비스 로고 모음

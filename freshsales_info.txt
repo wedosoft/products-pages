@@ -1,0 +1,54 @@
+# Freshsales 제품 정보
+
+## 슬로건/한 줄 요약
+- Sell smarter and close deals faster
+- 더 스마트하게 판매하고 더 빠르게 거래를 성사시키세요
+
+## 주요 특징
+1. **AI 기반 영업 지원**: Freddy AI를 통한 스마트한 영업 캠페인 실행, 리드 생성 및 관리
+2. **효율적인 조직화 및 전망**: 칸반 뷰와 드래그 앤 드롭 카드로 전체 영업 프로세스 계획 및 관리
+3. **고객 360° 뷰**: 고객에 대한 완전한 이해를 통해 맞춤형 대화 및 높은 전환율 달성
+
+## 상세 기능
+1. **스마트 캠페인**: Freddy AI의 도움으로 더 많은 리드를 생성하고 캡처, 분류, 라우팅 및 추적
+2. **효율적인 조직화**: 칸반 뷰와 드래그 앤 드롭 카드로 영업 프로세스 계획 및 관리
+3. **고객 중심 대화**: 360° 뷰로 고객을 더 잘 이해하고 선호하는 채널에서 컨텍스트를 가지고 소통
+4. **영업 프로세스 간소화**: 시기적절한 인사이트로 프로세스 간소화, 거래 성사, 병목 현상 방지
+5. **업무 자동화**: 반복적이고 일상적인 작업을 자동화하여 수동 작업 제거 및 시간 절약
+6. **AI 기반 지원 및 인사이트**: Freddy AI가 최고의 리드와 거래를 강조하고 인사이트 제공
+
+## 연동/확장성
+- Freshsales Suite를 통한 영업 및 마케팅 통합
+- 고객 여정의 단일 정보 소스 제공
+- 다양한 채널 통합 지원
+
+## 경쟁 우위
+- AI 기반 인사이트로 영업 프로세스 최적화
+- 직관적인 인터페이스로 빠른 적응 및 도입
+- 생산성, 협업, 인사이트를 통한 매출 증대
+- 반복 작업 자동화로 팀 사기 향상
+
+## 타겟 고객
+- 기업의 전산 담당자
+- 영업 팀 관리자
+- 영업 프로세스 최적화를 원하는 기업
+
+## 고객 사례
+- Blue Nile (Mike Hopkins, Senior VP, Sales and Service)
+- "Reducing our no-show rate was important to have higher utilization of our sales team. With Freshsales, we brought it down to about 20%, and time is money."
+
+- Humn (Alexandra, CRM Operations Manager)
+- "Over the last year, we've acquired 10X more customers and are rapidly scaling. To our surprise and relief, through this busy phase, the time spent on administrative tasks by teams dropped by 20%."
+
+- Sify (Arun Rajamani, Head – Digital Sales)
+- "We were able to gather intent data from email engagement and profile our audience and market to niches better. In a nutshell, the CRM became integral to our organization, rather than a supporting force."
+
+## CTA
+- Try it Free
+- Get a Demo
+
+## 이미지 참조
+- AI 기반 영업 캠페인 관리 화면
+- 칸반 뷰 영업 프로세스 관리 인터페이스
+- 고객 360° 뷰 대시보드
+- 자동화 워크플로우 설정 화면

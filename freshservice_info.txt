@@ -1,0 +1,48 @@
+# Freshservice 제품 정보
+
+## 슬로건/한 줄 요약
+- Enterprise-grade ITSM, for every business
+- 모든 비즈니스를 위한 엔터프라이즈급 ITSM 솔루션
+
+## 주요 특징
+1. **AI 기반 서비스 관리**: Freddy AI를 통한 셀프 서비스, 빠른 해결책, 관리자를 위한 인사이트 제공
+2. **통합 워크스페이스**: IT, 운영 및 비즈니스 팀이 복잡성 없이 뛰어난 서비스를 제공할 수 있는 통합 플랫폼
+3. **코드 없는 자동화**: 드래그 앤 드롭 방식의 자동화로 시간 절약 및 생산성 향상
+
+## 상세 기능
+1. **IT 서비스 관리(ITSM)**: AI와 자동화를 통한 원활한 서비스 관리 및 관리자를 위한 인사이트
+2. **IT 운영 관리**: 통합 솔루션으로 빠른 협업 및 문제 해결, AI 지원 포함
+3. **IT 자산 관리(ITAM)**: 하드웨어, 소프트웨어, SaaS를 실시간으로 자동 업데이트되는 CMDB에서 관리
+4. **옴니채널 지원**: 이메일부터 Slack까지, 주요 인시던트부터 비밀번호 재설정까지 모든 것을 하나의 통합 뷰에서 관리
+5. **IT 현대화**: IT 운영 자동화 및 단순화, 반복 작업 감소, 데이터 기반 의사결정 지원
+6. **워크플로우 및 자동화**: 코드 없는 드래그 앤 드롭 방식의 자동화로 생산성 향상
+
+## 연동/확장성
+- 클라우드 및 온프레미스 엔터프라이즈 애플리케이션과 최소한의 복잡성으로 통합
+- 주요 연동 서비스: Microsoft Teams, Slack, Zoom, AWS, Google Workspace, Device42 등
+- 빠른 가치 실현과 높은 생산성을 위한 통합 기능 제공
+
+## 경쟁 우위
+- IT를 비용 센터에서 가치 창출자로 전환
+- 강력한 통합 플랫폼, 시간 절약 자동화, 원활한 협업 제공
+- 기본 제공되는 AI로 효율성 향상 및 더 나은 사용자 경험 제공
+- 레거시 ITSM 시스템의 제약에서 벗어난 새로운 프로세스 배포 가능
+
+## 타겟 고객
+- 기업의 전산 담당자
+- IT 인프라 및 서비스 관리자
+- 디지털 전환을 추진하는 기업
+
+## 고객 사례
+- RingCentral (Fred Chin, AVP of IT Infrastructure and End User Services)
+- "Freshservice has opened up our eyes to deploying new processes in a new fashion. We're no longer constrained by our legacy ITSM system. Freshservice automation gives us peace of mind."
+
+## CTA
+- Try it free
+- Book a demo
+
+## 이미지 참조
+- 통합 서비스 데스크 인터페이스
+- AI 기반 자동화 워크플로우 화면
+- 대시보드 및 분석 화면
+- 연동 서비스 로고 모음

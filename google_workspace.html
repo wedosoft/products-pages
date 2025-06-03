@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Workspace - 비즈니스를 위한 클라우드 협업 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 제품별 커스텀 스타일 */
+        :root {
+            --product-color: #4285F4;
+            --product-color-light: #5C9CFF;
+            --product-color-dark: #3367D6;
+            --product-red: #EA4335;
+            --product-yellow: #FBBC05;
+            --product-green: #34A853;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #e8f0fe 100%);
+        }
+        
+        .feature-card:nth-child(1) {
+            border-top: 3px solid var(--product-color);
+        }
+        
+        .feature-card:nth-child(2) {
+            border-top: 3px solid var(--product-red);
+        }
+        
+        .feature-card:nth-child(3) {
+            border-top: 3px solid var(--product-green);
+        }
+        
+        .feature-icon {
+            color: var(--product-color);
+        }
+        
+        .feature-card:nth-child(2) .feature-icon {
+            color: var(--product-red);
+        }
+        
+        .feature-card:nth-child(3) .feature-icon {
+            color: var(--product-green);
+        }
+        
+        .functions {
+            background: linear-gradient(135deg, #f9f9f9 0%, #e8f0fe 100%);
+        }
+        
+        .functions-table th {
+            background-color: var(--product-color);
+        }
+        
+        .function-image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .cta {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--product-color-dark);
+        }
+        
+        .btn-secondary {
+            color: var(--product-color);
+            border: 1px solid var(--product-color);
+        }
+        
+        .google-apps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .google-app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+        
+        .google-app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .google-app-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .gmail { background-color: #EA4335; }
+        .drive { background-color: #FBBC05; }
+        .docs { background-color: #4285F4; }
+        .sheets { background-color: #0F9D58; }
+        .slides { background-color: #F4B400; }
+        .meet { background-color: #00897B; }
+        .calendar { background-color: #4285F4; }
+        .chat { background-color: #1A73E8; }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <img src="images/google-workspace-logo.png" alt="Google Workspace 로고" onerror="this.src='https://via.placeholder.com/180x40?text=Google+Workspace'">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#features" class="nav-link">주요 특징</a></li>
+                    <li class="nav-item"><a href="#functions" class="nav-link">상세 기능</a></li>
+                    <li class="nav-item"><a href="#integrations" class="nav-link">연동/확장성</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link btn btn-primary">데모 신청</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Google Workspace</h1>
+                <p class="hero-subtitle">비즈니스를 위한 통합 클라우드 협업 솔루션으로 업무 효율성을 높이세요</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">데모 신청</a>
+                    <a href="#cta" class="btn btn-secondary btn-large">상담 문의</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/google-workspace-hero.png" alt="Google Workspace 대시보드" onerror="this.src='https://via.placeholder.com/600x400?text=Google+Workspace+대시보드'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">주요 특징</h2>
+            <p class="section-subtitle">Google Workspace는 기업의 생산성과 협업을 향상시키는 통합 클라우드 솔루션입니다.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">실시간 협업</h3>
+                    <p class="feature-description">여러 사용자가 동시에 문서를 편집하고 실시간으로 변경 사항을 확인할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">클라우드 기반</h3>
+                    <p class="feature-description">언제 어디서나 모든 기기에서 작업에 접근하고 데이터를 안전하게 저장할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">엔터프라이즈급 보안</h3>
+                    <p class="feature-description">고급 보안 기능으로 데이터를 보호하고 관리자가 접근 권한을 세밀하게 제어할 수 있습니다.</p>
+                </div>
+            </div>
+            
+            <div class="google-apps">
+                <div class="google-app">
+                    <div class="google-app-icon gmail">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="google-app-name">Gmail</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon drive">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <div class="google-app-name">Drive</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon docs">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="google-app-name">Docs</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon sheets">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="google-app-name">Sheets</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon slides">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="google-app-name">Slides</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon meet">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="google-app-name">Meet</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon calendar">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="google-app-name">Calendar</div>
+                </div>
+                <div class="google-app">
+                    <div class="google-app-icon chat">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    <div class="google-app-name">Chat</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2 class="section-title">상세 기능</h2>
+            <p class="section-subtitle">Google Workspace는 기업의 다양한 업무 요구사항을 충족하는 통합 솔루션입니다.</p>
+            
+            <table class="functions-table">
+                <thead>
+                    <tr>
+                        <th>기능명</th>
+                        <th>설명 및 이미지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="function-name">비즈니스 이메일</td>
+                        <td>
+                            <p class="function-description">회사 도메인을 사용한 전문적인 이메일 주소와 강력한 스팸 필터링, 검색, 자동 분류 기능을 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-email.png" alt="비즈니스 이메일" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=비즈니스+이메일'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">화상 회의</td>
+                        <td>
+                            <p class="function-description">Google Meet을 통해 최대 250명까지 참여할 수 있는 고품질 화상 회의와 화면 공유, 실시간 자막 기능을 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-meet.png" alt="화상 회의" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=화상+회의'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">클라우드 스토리지</td>
+                        <td>
+                            <p class="function-description">Google Drive를 통해 안전한 클라우드 스토리지와 파일 공유, 버전 관리, 권한 설정 기능을 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-drive.png" alt="클라우드 스토리지" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=클라우드+스토리지'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">문서 협업</td>
+                        <td>
+                            <p class="function-description">Docs, Sheets, Slides를 통해 여러 사용자가 동시에 문서를 편집하고 실시간으로 변경 사항을 확인할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-docs.png" alt="문서 협업" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=문서+협업'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">일정 관리</td>
+                        <td>
+                            <p class="function-description">Google Calendar를 통해 팀 일정을 공유하고 회의실 예약, 자동 일정 제안, 외부 캘린더 통합 기능을 제공합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-calendar.png" alt="일정 관리" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=일정+관리'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">관리자 콘솔</td>
+                        <td>
+                            <p class="function-description">중앙 집중식 관리 콘솔을 통해 사용자 계정, 보안 설정, 기기 관리, 데이터 분석 등을 효율적으로 관리할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/google-workspace-admin.png" alt="관리자 콘솔" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=관리자+콘솔'">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 연동 섹션 -->
+    <section class="integrations" id="integrations">
+        <div class="container">
+            <h2 class="section-title">연동/확장성</h2>
+            <p class="section-subtitle">Google Workspace는 다양한 비즈니스 도구와 원활하게 연동됩니다.</p>
+            
+            <div class="integration-logos">
+                <img src="images/integration-salesforce.png" alt="Salesforce" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Salesforce'">
+                <img src="images/integration-slack.png" alt="Slack" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Slack'">
+                <img src="images/integration-asana.png" alt="Asana" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Asana'">
+                <img src="images/integration-docusign.png" alt="DocuSign" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=DocuSign'">
+                <img src="images/integration-zoom.png" alt="Zoom" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Zoom'">
+                <img src="images/integration-trello.png" alt="Trello" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=Trello'">
+            </div>
+            
+            <p class="integration-description">
+                Google Workspace는 Google Workspace Marketplace를 통해 5,000개 이상의 타사 애플리케이션과 연동됩니다. 
+                또한 Google Cloud Platform과의 원활한 통합으로 고급 데이터 분석, 머신러닝, 인프라 서비스를 활용할 수 있으며, 
+                API를 통해 기존 시스템과 커스텀 애플리케이션을 연결할 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Google Workspace는 어떤 규모의 기업에 적합한가요?</div>
+                    <div class="faq-answer">
+                        <p>Google Workspace는 소규모 스타트업부터 대기업까지 모든 규모의 기업에 맞는 다양한 플랜을 제공합니다. Business Starter, Business Standard, Business Plus, Enterprise 등 기업의 규모와 요구사항에 맞는 플랜을 선택할 수 있으며, 사용자 수에 따라 유연하게 확장할 수 있습니다. 특히 빠르게 성장하는 기업에는 확장성과 유연성 측면에서 큰 이점을 제공합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Google Workspace의 데이터 보안은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Google Workspace는 엔터프라이즈급 보안 기능을 제공합니다. 전송 중 및 저장 시 데이터 암호화, 2단계 인증, 싱글 사인온(SSO), 고급 DLP(데이터 손실 방지), 엔드포인트 관리, 보안 키 지원 등 다양한 보안 기능을 제공합니다. 또한 ISO 27001, ISO 27017, ISO 27018, SOC 2/3, FedRAMP 등 글로벌 보안 표준을 준수하며, 정기적인 보안 감사와 취약점 테스트를 통해 시스템의 안전성을 지속적으로 검증합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">기존 이메일과 데이터를 Google Workspace로 마이그레이션할 수 있나요?</div>
+                    <div class="faq-answer">
+                        <p>네, Google Workspace는 다양한 마이그레이션 도구와 서비스를 제공합니다. 이메일, 캘린더, 연락처, 파일 등을 Microsoft Exchange, Office 365, Lotus Notes 등 기존 시스템에서 Google Workspace로 쉽게 마이그레이션할 수 있습니다. Google의 데이터 마이그레이션 서비스를 통해 대규모 데이터도 안전하고 효율적으로 이전할 수 있으며, 필요에 따라 단계적 마이그레이션도 가능합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">오프라인에서도 Google Workspace를 사용할 수 있나요?</div>
+                    <div class="faq-answer">
+                        <p>네, Google Workspace의 주요 애플리케이션은 오프라인 모드를 지원합니다. Gmail, Google Docs, Sheets, Slides 등은 인터넷 연결 없이도 작업할 수 있으며, 다시 온라인 상태가 되면 자동으로 변경 사항이 동기화됩니다. Chrome 브라우저에서 오프라인 액세스를 설정하거나 데스크톱 앱을 설치하여 인터넷 연결이 불안정한 환경에서도 생산성을 유지할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta-title">비즈니스 협업을 혁신하세요</h2>
+            <p class="cta-subtitle">Google Workspace와 함께 팀의 생산성과 협업을 향상시키세요.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary btn-large">데모 신청</a>
+                <a href="#" class="btn btn-primary btn-large">상담 문의</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">Google Workspace</div>
+                    <p class="footer-description">비즈니스를 위한 통합 클라우드 협업 솔루션으로 업무 효율성을 높이세요</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">제품</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">주요 특징</a></li>
+                        <li class="footer-link"><a href="#">상세 기능</a></li>
+                        <li class="footer-link"><a href="#">가격 정책</a></li>
+                        <li class="footer-link"><a href="#">보안</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">리소스</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">블로그</a></li>
+                        <li class="footer-link"><a href="#">웨비나</a></li>
+                        <li class="footer-link"><a href="#">고객 사례</a></li>
+                        <li class="footer-link"><a href="#">도움말 센터</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">회사</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">회사 소개</a></li>
+                        <li class="footer-link"><a href="#">파트너</a></li>
+                        <li class="footer-link"><a href="#">채용 정보</a></li>
+                        <li class="footer-link"><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Google Workspace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // FAQ 아코디언
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

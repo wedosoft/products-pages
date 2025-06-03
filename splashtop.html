@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashtop - 원격 접속 및 지원 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 제품별 커스텀 스타일 */
+        :root {
+            --product-color: #FF6600;
+            --product-color-light: #FF8533;
+            --product-color-dark: #E65C00;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #fff0e6 100%);
+        }
+        
+        .feature-card {
+            border-top: 3px solid var(--product-color);
+        }
+        
+        .feature-icon {
+            color: var(--product-color);
+        }
+        
+        .functions {
+            background: linear-gradient(135deg, #f9f9f9 0%, #fff0e6 100%);
+        }
+        
+        .functions-table th {
+            background-color: var(--product-color);
+        }
+        
+        .function-image-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+        
+        .cta {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--product-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--product-color-dark);
+        }
+        
+        .btn-secondary {
+            color: var(--product-color);
+            border: 1px solid var(--product-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <img src="images/splashtop-logo.png" alt="Splashtop 로고" onerror="this.src='https://via.placeholder.com/180x40?text=Splashtop'">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#features" class="nav-link">주요 특징</a></li>
+                    <li class="nav-item"><a href="#functions" class="nav-link">상세 기능</a></li>
+                    <li class="nav-item"><a href="#integrations" class="nav-link">연동/확장성</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link btn btn-primary">데모 신청</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Splashtop</h1>
+                <p class="hero-subtitle">안전하고 빠른 원격 접속 및 지원 솔루션으로 언제 어디서나 업무 연속성을 보장합니다</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">데모 신청</a>
+                    <a href="#cta" class="btn btn-secondary btn-large">상담 문의</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/splashtop-hero.png" alt="Splashtop 원격 접속 화면" onerror="this.src='https://via.placeholder.com/600x400?text=Splashtop+원격+접속+화면'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 특징 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">주요 특징</h2>
+            <p class="section-subtitle">Splashtop은 기업의 전산 담당자를 위한 안전하고 효율적인 원격 접속 및 지원 솔루션을 제공합니다.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">엔터프라이즈급 보안</h3>
+                    <p class="feature-description">TLS 1.2 암호화, 2단계 인증, 디바이스 인증 등 다양한 보안 기능으로 안전한 원격 접속 환경을 제공합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">고성능 원격 접속</h3>
+                    <p class="feature-description">4K 해상도와 60fps의 고품질 스트리밍으로 지연 없는 빠른 원격 접속 경험을 제공합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset fa-3x"></i>
+                    </div>
+                    <h3 class="feature-title">다양한 지원 기능</h3>
+                    <p class="feature-description">무인 원격 접속, 유인 지원, 원격 모니터링 등 다양한 지원 기능으로 IT 관리 효율성을 높입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="functions" id="functions">
+        <div class="container">
+            <h2 class="section-title">상세 기능</h2>
+            <p class="section-subtitle">Splashtop은 기업의 원격 접속 및 지원 요구사항을 충족하는 다양한 기능을 제공합니다.</p>
+            
+            <table class="functions-table">
+                <thead>
+                    <tr>
+                        <th>기능명</th>
+                        <th>설명 및 이미지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="function-name">무인 원격 접속</td>
+                        <td>
+                            <p class="function-description">사전에 설치된 에이전트를 통해 언제든지 원격 컴퓨터에 접속하여 작업할 수 있습니다. 사용자의 개입 없이도 접속이 가능합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-unattended.png" alt="무인 원격 접속" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=무인+원격+접속'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">유인 원격 지원</td>
+                        <td>
+                            <p class="function-description">사용자의 동의를 받아 일회성 코드나 링크를 통해 즉시 원격 지원을 제공할 수 있습니다. 별도의 소프트웨어 설치가 필요 없습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-attended.png" alt="유인 원격 지원" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=유인+원격+지원'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">파일 전송</td>
+                        <td>
+                            <p class="function-description">로컬 컴퓨터와 원격 컴퓨터 간에 드래그 앤 드롭으로 쉽게 파일을 전송할 수 있습니다. 대용량 파일도 빠르게 전송됩니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-file-transfer.png" alt="파일 전송" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=파일+전송'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">원격 인쇄</td>
+                        <td>
+                            <p class="function-description">원격 컴퓨터의 문서를 로컬 프린터로 직접 인쇄할 수 있어 원격 작업 시에도 문서 출력이 용이합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-remote-print.png" alt="원격 인쇄" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=원격+인쇄'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">세션 기록</td>
+                        <td>
+                            <p class="function-description">원격 지원 세션을 녹화하여 나중에 참조하거나 교육 목적으로 활용할 수 있습니다. 감사 및 규정 준수에도 유용합니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-session-recording.png" alt="세션 기록" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=세션+기록'">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="function-name">다중 모니터 지원</td>
+                        <td>
+                            <p class="function-description">원격 컴퓨터의 여러 모니터를 동시에 보거나 특정 모니터만 선택하여 볼 수 있어 멀티 모니터 환경에서도 효율적으로 작업할 수 있습니다.</p>
+                            <div class="function-image-container">
+                                <img src="images/splashtop-multi-monitor.png" alt="다중 모니터 지원" class="function-image" onerror="this.src='https://via.placeholder.com/400x200?text=다중+모니터+지원'">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 연동 섹션 -->
+    <section class="integrations" id="integrations">
+        <div class="container">
+            <h2 class="section-title">연동/확장성</h2>
+            <p class="section-subtitle">Splashtop은 다양한 비즈니스 도구 및 시스템과 원활하게 연동됩니다.</p>
+            
+            <div class="integration-logos">
+                <img src="images/integration-psa.png" alt="PSA 도구" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=PSA+도구'">
+                <img src="images/integration-rmm.png" alt="RMM 솔루션" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=RMM+솔루션'">
+                <img src="images/integration-ticketing.png" alt="티켓팅 시스템" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=티켓팅+시스템'">
+                <img src="images/integration-mdm.png" alt="MDM 솔루션" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=MDM+솔루션'">
+                <img src="images/integration-sso.png" alt="SSO 서비스" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=SSO+서비스'">
+                <img src="images/integration-directory.png" alt="디렉토리 서비스" class="integration-logo" onerror="this.src='https://via.placeholder.com/120x60?text=디렉토리+서비스'">
+            </div>
+            
+            <p class="integration-description">
+                Splashtop은 ConnectWise, Autotask, ServiceNow 등 주요 PSA(Professional Services Automation) 도구와 연동되어 
+                티켓 관리와 원격 지원을 통합할 수 있습니다. 또한 NinjaOne, Kaseya, Datto RMM 등 RMM(Remote Monitoring and Management) 
+                솔루션과의 통합으로 원격 모니터링 및 관리 기능을 강화할 수 있습니다. Zendesk, Freshdesk 등 티켓팅 시스템과의 연동을 통해 
+                고객 지원 워크플로우를 최적화하고, Okta, Azure AD, Google Workspace 등 SSO(Single Sign-On) 서비스 및 디렉토리 서비스와의 
+                통합으로 사용자 인증 및 액세스 관리를 간소화할 수 있습니다. 또한 REST API를 통해 기존 시스템과의 커스텀 통합이 가능하여 
+                기업의 고유한 IT 환경에 맞게 확장할 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Splashtop은 어떤 운영체제를 지원하나요?</div>
+                    <div class="faq-answer">
+                        <p>Splashtop은 Windows, Mac, Linux, iOS, Android 등 다양한 운영체제를 지원합니다. Windows는 Windows 7, 8, 10, 11 및 Windows Server 버전을 지원하며, Mac은 macOS 10.10 이상을 지원합니다. Linux는 Ubuntu, CentOS, Red Hat, Fedora 등 주요 배포판을 지원합니다. 모바일 기기의 경우 iOS 12.0 이상, Android 5.0 이상을 지원하여 거의 모든 기기에서 원격 접속 및 지원이 가능합니다. 이러한 크로스 플랫폼 지원으로 다양한 환경에서 일관된 원격 접속 경험을 제공합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Splashtop의 보안 기능은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Splashtop은 엔터프라이즈급 보안 기능을 제공합니다. 모든 원격 세션은 TLS 1.2 및 AES 256비트 암호화로 보호되며, 2단계 인증(2FA), 디바이스 인증, 생체 인식 로그인 등 다중 인증 옵션을 지원합니다. 또한 세션 타임아웃, 원격 잠금, 화면 녹화 등 세션 보안 기능과 IP 제한, 디바이스 액세스 제어, 그룹 기반 권한 설정 등 액세스 제어 기능을 제공합니다. SOC 2, GDPR, HIPAA, PCI DSS 등 주요 규정 준수 요구사항을 충족하며, 정기적인 보안 감사와 취약점 테스트를 통해 시스템의 안전성을 지속적으로 검증합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Splashtop의 라이선스 모델은 어떻게 되나요?</div>
+                    <div class="faq-answer">
+                        <p>Splashtop은 다양한 라이선스 모델을 제공합니다. 비즈니스 액세스 라이선스는 사용자 기반으로 제공되며, 한 명의 사용자가 여러 대의 컴퓨터에 접속할 수 있습니다. 원격 지원 라이선스는 동시 기술자(concurrent technician) 모델로, 라이선스 수만큼의 기술자가 동시에 무제한 컴퓨터에 원격 지원을 제공할 수 있습니다. 엔터프라이즈 라이선스는 조직의 규모와 요구사항에 맞게 커스터마이징이 가능하며, 대규모 배포를 위한 볼륨 할인이 제공됩니다. 모든 라이선스는 연간 구독 방식으로 제공되며, 무료 평가판을 통해 구매 전 서비스를 테스트해볼 수 있습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">네트워크 환경이 좋지 않은 곳에서도 Splashtop을 사용할 수 있나요?</div>
+                    <div class="faq-answer">
+                        <p>네, Splashtop은 낮은 대역폭 환경에서도 효율적으로 작동하도록 최적화되어 있습니다. 자동 품질 조정 기술을 통해 네트워크 상태에 따라 스트리밍 품질을 동적으로 조정하여 연결이 불안정한 환경에서도 원활한 원격 접속 경험을 제공합니다. 최소 1.5Mbps의 인터넷 속도에서도 작동 가능하며, 네트워크 지연 시간이 높은 환경에서도 사용자 경험을 최적화하는 기술을 적용하고 있습니다. 또한 연결이 일시적으로 끊어진 경우에도 자동으로 재연결을 시도하여 작업 중단을 최소화합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 섹션 -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta-title">원격 접속 및 지원을 혁신하세요</h2>
+            <p class="cta-subtitle">Splashtop과 함께 안전하고 효율적인 원격 IT 관리 환경을 구축하세요.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary btn-large">데모 신청</a>
+                <a href="#" class="btn btn-primary btn-large">상담 문의</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">Splashtop</div>
+                    <p class="footer-description">안전하고 빠른 원격 접속 및 지원 솔루션으로 언제 어디서나 업무 연속성을 보장합니다</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">제품</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">비즈니스 액세스</a></li>
+                        <li class="footer-link"><a href="#">원격 지원</a></li>
+                        <li class="footer-link"><a href="#">엔터프라이즈</a></li>
+                        <li class="footer-link"><a href="#">교육용</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">리소스</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">블로그</a></li>
+                        <li class="footer-link"><a href="#">웨비나</a></li>
+                        <li class="footer-link"><a href="#">고객 사례</a></li>
+                        <li class="footer-link"><a href="#">도움말 센터</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">회사</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">회사 소개</a></li>
+                        <li class="footer-link"><a href="#">파트너</a></li>
+                        <li class="footer-link"><a href="#">채용 정보</a></li>
+                        <li class="footer-link"><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Splashtop Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // FAQ 아코디언
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
